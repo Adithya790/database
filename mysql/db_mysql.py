@@ -1,11 +1,12 @@
 import mysql.connector
 
+print("Done!")
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
     password=""
 )
-
+print(conn)
 cursor = conn.cursor()
 
 cursor.execute("CREATE DATABASE IF NOT EXISTS syn_college")
